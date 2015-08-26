@@ -1,8 +1,8 @@
 from __future__ import division
-from decimal import *
+from decimal import Decimal, getcontext
 
 
-# Currently accurate to 18 decimal places
+# Currently accurate to 16 decimal places
 def pi_to_nth_digit(n):
     getcontext().prec = 28
     pi = Decimal(0)
